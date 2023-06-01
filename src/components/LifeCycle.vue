@@ -1,8 +1,13 @@
 <template>
-    <h1>Meu nome é: {{ nome }}</h1>
+    <div>
+       <h1>Meu nome é: {{ nome }}</h1> 
+       <InfoFrameworks />
+    </div>
 </template>
 
 <script>
+import InfoFrameworks from './InfoFrameworks.vue';
+
 export default {
     name: 'LifeCycle',
     data() {
@@ -19,6 +24,9 @@ export default {
         setTimeout(() => {
             this.nome = 'Spanhol'
         }, 2000);
-    }
+    },
+    components: {
+    InfoFrameworks,
+  },
 }
 </script>
