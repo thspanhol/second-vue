@@ -32,3 +32,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  a {
+    color: brown;
+  }
+</style>
