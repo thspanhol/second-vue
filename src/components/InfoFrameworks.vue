@@ -29,7 +29,11 @@ export default {
       mostrar_email: false,
       texto_email: 'Mostrar Email',
       array: ['Primeiro Item', 'Segundo Item', 'Terceiro Item'],
-      objetos: [{id: 1, item: 'Um'}, {id: 2, item: 'Dois'}, {id: 3, item: 'Três'}]
+      objetos: [
+        { id: 1, item: 'Um' },
+        { id: 2, item: 'Dois' },
+        { id: 3, item: 'Três' }
+      ]
     }
   },
   methods: {
@@ -44,7 +48,7 @@ export default {
 </script>
 
 <style scoped>
-  a {
-    color: brown;
-  }
+a {
+  color: brown;
+}
 </style>
