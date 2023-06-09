@@ -12,7 +12,7 @@
     <li v-for="numeros in objetos" :key="numeros.id">{{ numeros.item }}</li>
   </ul>
   <h2><a v-bind:href="meu_link" target="_blank">Meu GitHub</a></h2>
-  <button @click="showEmail">{{ texto_email }}</button>
+  <button @click="showEmail(), secondEvent()">{{ texto_email }}</button>
   <h2 v-show="mostrar_email">{{ email }}</h2>
 </template>
 
@@ -42,6 +42,11 @@ export default {
       this.texto_email === 'Mostrar Email'
         ? (this.texto_email = 'Esconder Email')
         : (this.texto_email = 'Mostrar Email')
+    },
+    secondEvent() {
+      setTimeout(() => {
+       this.showEmail();
+    }, 2500)
     }
   }
 }
