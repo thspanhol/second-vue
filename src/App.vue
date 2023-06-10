@@ -9,29 +9,29 @@
 <script>
 import PrimeiroComponente from './components/PrimeiroComponente.vue'
 import LifeCycle from './components/LifeCycle.vue'
-import UsaProps from './components/UsaProps.vue';
+import UsaProps from './components/UsaProps.vue'
 
 export default {
   name: 'App',
   components: {
     PrimeiroComponente,
     LifeCycle,
-    UsaProps,
+    UsaProps
   },
   data() {
     return {
-      PropsData: 'Passei o data como Props',
+      PropsData: 'Passei o data como Props'
     }
   }
 }
 </script>
 
 <style>
-  body {
-    background-color: #333;
-    color: #fff;
-  }
-  a {
-    color: plum;
-  }
+body {
+  background-color: #333;
+  color: #fff;
+}
+a {
+  color: plum;
+}
 </style>
