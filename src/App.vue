@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     aumentarContador() {
-      this.counter = this.counter +1
+      this.counter = this.counter + 1
     }
   }
 }
