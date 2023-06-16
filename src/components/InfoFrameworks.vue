@@ -45,8 +45,8 @@ export default {
     },
     secondEvent() {
       setTimeout(() => {
-       this.showEmail();
-    }, 2500)
+        this.showEmail()
+      }, 2500)
     }
   }
 }
